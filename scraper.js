@@ -10,9 +10,12 @@ module.exports = async function scrapeStreamUrl(id) {
       '--disable-dev-shm-usage',
       '--disable-accelerated-2d-canvas',
       '--disable-gpu',
-      '--window-size=1920x1080'
+      '--window-size=1920x1080',
+      '--disable-web-security',
+      '--disable-features=IsolateOrigins,site-per-process'
     ],
-    executablePath: process.env.CHROME_BIN || null
+    executablePath: process.env.CHROME_BIN || null,
+    ignoreHTTPSErrors: true
   });
   const page = await browser.newPage();
   let streamUrl = null;
