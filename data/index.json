@@ -1,0 +1,25 @@
+{
+  "items": [
+    {
+      "id": "movie:the-matrix-1999",
+      "type": "movie",
+      "title": "The Matrix",
+      "year": 1999,
+      "poster": null,
+      "telegram": { "file_id": "REPLACE_WITH_FILE_ID" }
+    },
+    {
+      "id": "series:planet-earth",
+      "type": "series",
+      "title": "Planet Earth",
+      "poster": null,
+      "seasons": {
+        "1": {
+          "1": { "telegram": { "file_id": "REPLACE_WITH_FILE_ID_EP1" } },
+          "2": { "telegram": { "file_id": "REPLACE_WITH_FILE_ID_EP2" } }
+        }
+      }
+    }
+  ]
+}
+
